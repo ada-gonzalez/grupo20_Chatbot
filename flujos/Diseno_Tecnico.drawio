@@ -1,0 +1,108 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.6">
+  <diagram name="Página-1" id="g9vW9hkhukUUO_uHAcKs">
+    <mxGraphModel dx="1626" dy="1020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-6" edge="1" parent="1" source="OvBsw-DA7VjJNAKiHNyP-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" target="OvBsw-DA7VjJNAKiHNyP-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="208" />
+              <mxPoint x="580" y="-20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-7" connectable="0" parent="N1-mFmI3ZSUPp-JJ_Tt3-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Derivación de Casos" vertex="1">
+          <mxGeometry relative="1" x="0.0198" y="4" as="geometry">
+            <mxPoint x="-107" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-21" edge="1" parent="1" source="OvBsw-DA7VjJNAKiHNyP-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1.01;exitY=0.118;exitDx=0;exitDy=0;exitPerimeter=0;" target="N1-mFmI3ZSUPp-JJ_Tt3-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="75" />
+              <mxPoint x="270" y="-70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-22" connectable="0" parent="N1-mFmI3ZSUPp-JJ_Tt3-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Respuesta al usuario&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.073" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OvBsw-DA7VjJNAKiHNyP-21" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;textShadow=0;labelBorderColor=none;strokeColor=light-dark(#306EC0,#EDEDED);strokeWidth=2;swimlaneFillColor=default;" value="&lt;blockquote data-start=&quot;2553&quot; data-end=&quot;2577&quot;&gt;&lt;p data-start=&quot;2555&quot; data-end=&quot;2577&quot;&gt;Backend Chatbot CSDC&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(Python)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-start=&quot;2579&quot; data-end=&quot;2650&quot;&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="210" width="220" x="-10" y="50" as="geometry">
+            <mxRectangle height="30" width="120" x="310" y="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OvBsw-DA7VjJNAKiHNyP-26" edge="1" parent="OvBsw-DA7VjJNAKiHNyP-21" source="OvBsw-DA7VjJNAKiHNyP-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="OvBsw-DA7VjJNAKiHNyP-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OvBsw-DA7VjJNAKiHNyP-23" parent="OvBsw-DA7VjJNAKiHNyP-21" style="text;html=1;whiteSpace=wrap;strokeColor=#306EC0;fillColor=#306EC0;align=center;verticalAlign=middle;rounded=0;strokeWidth=2;fontColor=#FFFFFF;fontStyle=1" value="&lt;blockquote data-start=&quot;2808&quot; data-end=&quot;2836&quot;&gt;&lt;p data-start=&quot;2810&quot; data-end=&quot;2836&quot;&gt;Gestor de conversaciones&lt;/p&gt;&lt;/blockquote&gt;&lt;h4 data-start=&quot;2838&quot; data-end=&quot;2871&quot;&gt;&lt;/h4&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OvBsw-DA7VjJNAKiHNyP-25" parent="OvBsw-DA7VjJNAKiHNyP-21" style="text;html=1;whiteSpace=wrap;strokeColor=#306EC0;fillColor=#306EC0;align=center;verticalAlign=middle;rounded=0;fontColor=#FFFFFF;fontStyle=1;strokeWidth=2;" value="&lt;div style=&quot;&quot;&gt;&lt;blockquote data-start=&quot;2912&quot; data-end=&quot;2940&quot;&gt;&lt;p data-start=&quot;2914&quot; data-end=&quot;2940&quot;&gt;Motor de flujos y reglas&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="165" x="27.5" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-10" parent="OvBsw-DA7VjJNAKiHNyP-21" style="text;html=1;whiteSpace=wrap;strokeColor=#306EC0;fillColor=#306EC0;align=center;verticalAlign=middle;rounded=0;fontColor=#FFFFFF;fontStyle=1;strokeWidth=2;" value="&lt;div style=&quot;&quot;&gt;&lt;blockquote data-start=&quot;2912&quot; data-end=&quot;2940&quot;&gt;&lt;p data-start=&quot;2914&quot; data-end=&quot;2940&quot;&gt;Fallback&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="165" x="27.5" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="OvBsw-DA7VjJNAKiHNyP-28" parent="1" style="verticalLabelPosition=bottom;sketch=0;html=1;fillColor=light-dark(#306EC0,#C380C2);verticalAlign=top;align=center;pointerEvents=1;shape=mxgraph.cisco_safe.design.actor_2;" value="&lt;font face=&quot;Tahoma&quot;&gt;Agente Humano&lt;br&gt;CSDC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="20" x="500" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="OvBsw-DA7VjJNAKiHNyP-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=17;" value="Diseño técnico - Chatbot Asistente CSDC" vertex="1">
+          <mxGeometry height="30" width="445" x="-90" y="-151" as="geometry" />
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-3" edge="1" parent="1" source="N1-mFmI3ZSUPp-JJ_Tt3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.017;entryY=0.109;entryDx=0;entryDy=0;entryPerimeter=0;" target="OvBsw-DA7VjJNAKiHNyP-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-90" y="-70" />
+              <mxPoint x="-90" y="73" />
+            </Array>
+            <mxPoint x="-10" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-16" connectable="0" parent="N1-mFmI3ZSUPp-JJ_Tt3-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Mensajes del usuario&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1468" y="3" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#306EC0;strokeWidth=2;fillColor=#306EC0;fontColor=light-dark(#ffffff, #ededed);fontStyle=1" value="Telegram Bot&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;(Canal de Mensajería)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="135" x="20" y="-95" as="geometry" />
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-11" edge="1" parent="1" source="N1-mFmI3ZSUPp-JJ_Tt3-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.145;exitY=1;exitDx=0;exitDy=-4.35;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="OvBsw-DA7VjJNAKiHNyP-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="352" y="168" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-2" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=light-dark(#306EC0,#EDEDED);fillColor=#FFFFFF;" value="Catálogo de Preguntas y Respuestas" vertex="1">
+          <mxGeometry height="100" width="80" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-8" edge="1" parent="1" source="OvBsw-DA7VjJNAKiHNyP-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" target="N1-mFmI3ZSUPp-JJ_Tt3-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="193" y="265" as="sourcePoint" />
+            <mxPoint x="360" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-12" connectable="0" parent="N1-mFmI3ZSUPp-JJ_Tt3-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Consulta de Contenido" vertex="1">
+          <mxGeometry relative="1" x="-0.2133" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-13" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=light-dark(#306EC0,#EDEDED);fillColor=#FFFFFF;" value="Google Sheets&lt;div&gt;(Registro de Solicitudes)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="80" x="-240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-14" edge="1" parent="1" source="OvBsw-DA7VjJNAKiHNyP-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N1-mFmI3ZSUPp-JJ_Tt3-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N1-mFmI3ZSUPp-JJ_Tt3-15" connectable="0" parent="N1-mFmI3ZSUPp-JJ_Tt3-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Guardar solicitud&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0978" y="4" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
