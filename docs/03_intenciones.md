@@ -6,15 +6,13 @@ de error/fallback.
 # Catálogo de Intenciones y Respuestas  
 **Chatbot Asistente CSDC – Versión Lite**
 
-Este documento define las intenciones principales del chatbot, ejemplos de frases de usuario y las respuestas base del sistema.  
-Las intenciones están diseñadas para ser implementadas mediante flujos guiados y, en fases posteriores, mediante plataformas de interpretación de lenguaje natural como Dialogflow.
+El presente catálogo define las intenciones dentro del alcance del Chatbot Asistente CSDC, en este documento se registran ejemplos de frases de ciudadanos (usuarios) al interactuar con el bot y los mensajes que el Chatbot asistente utilizará como respuesta.
 
----
 
 ## 1. Intención: bienvenida
 
 **Descripción:**  
-Gestiona el inicio de la conversación y presenta las opciones principales del chatbot.
+Inicio de la conversación y presenta las opciones principales del chatbot. 
 
 **Ejemplos de frases del usuario:**
 - Hola  
@@ -24,8 +22,8 @@ Gestiona el inicio de la conversación y presenta las opciones principales del c
 - Iniciar conversación  
 
 **Respuesta base del chatbot:**
-> ¡Hola! 👋  
-> Bienvenido al asistente virtual del Centro de Servicios Digitales al Ciudadano (CSDC).  
+> ¡Hola! 
+> Bienvenido al asistente virtual del CSDC.  
 > Puedo ayudarte con información sobre horarios de atención, requisitos de trámites o registrar una solicitud.  
 > ¿En qué puedo ayudarte hoy?
 
