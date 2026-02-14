@@ -18,6 +18,9 @@ user_states = {}
 ##INTENCION 3: requisitos_tramite##
 #Menu de tramites disponibles
 def iniciar_requisitos(user_id):
+#Si el usuario en la nube llega vacío
+    if not user_id:
+        user_id = "anon"
     user_states[user_id] = {
         "flow": "requisitos",
         "step": "esperando_tramite"
@@ -96,7 +99,6 @@ def iniciar_registro(user_id):
 
 def manejar_registro(user_id, user_message):
     state = user_states.get(user_id)
-
     if not state or state.get("flow") != "registro":
         return None
 
@@ -135,19 +137,24 @@ def manejar_registro(user_id, user_message):
         }
 
     # PASO 4 — Confirmación
+    # Versión por si guardar la solicitud en la nube falla
     if step == "confirmacion":
-        if user_message.lower() in ["si", "sí"]:
-            guardar_solicitud(
-                nombre=data["nombre"],
-                descripcion=data["descripcion"],
-                contacto=data["contacto"]
-            )
+        respuesta_norm = normalizar_texto(user_message)
 
-            del user_states[user_id]
+        if respuesta_norm in ["si", "sii"]:
+            try:
+                guardar_solicitud(
+                    nombre=data["nombre"],
+                    descripcion=data["descripcion"],
+                    contacto=data["contacto"]
+                )
+                del user_states[user_id]
+                return {"fulfillmentText": MENSAJES_REGISTRO["exito"]}
+            except Exception as e:
+                print("Error guardando solicitud:", e)
+                return {"fulfillmentText": "Tu solicitud no pudo guardarse en este momento 😅 Intenta más tarde."}
 
-            return {"fulfillmentText": MENSAJES_REGISTRO["exito"]}
-
-        if user_message.lower() == "no":
+        if respuesta_norm == "no":
             del user_states[user_id]
             return {"fulfillmentText": MENSAJES_REGISTRO["cancelado"]}
 
