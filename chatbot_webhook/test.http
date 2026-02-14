@@ -1,0 +1,9 @@
+POST http://localhost:5000/webhook
+Content-Type: application/json
+
+{
+  "queryResult": {
+    "intent": { "displayName": "requisitos_tramite_inicio" },
+    "queryText": "Quiero saber los requisitos"
+  }
+}
