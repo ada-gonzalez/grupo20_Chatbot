@@ -1,11 +1,12 @@
 from flask import Flask, request, jsonify
 import os
-from flows import (
+from chatbot_webhook.flows import (
     iniciar_requisitos,
     manejar_tramite,
     iniciar_registro,
     manejar_registro
 )
+
 
 app = Flask(__name__)
 

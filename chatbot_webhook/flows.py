@@ -1,8 +1,8 @@
 import unicodedata
 import re
-from data import REQUISITOS
-from data import MENSAJES_REGISTRO
-from sheets import guardar_solicitud
+from chatbot_webhook.data import REQUISITOS, MENSAJES_REGISTRO
+from chatbot_webhook.sheets import guardar_solicitud
+
 
 
 #todo el texto en minúsculas, sin tildes ni símbolos
