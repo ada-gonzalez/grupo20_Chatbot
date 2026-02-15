@@ -27,13 +27,15 @@ def iniciar_requisitos(user_id):
     }
     return {
         "fulfillmentText": (
-            "Claro 😊 ¿Qué trámite deseas consultar?\n\n"
+            "¡Con gusto te ayudo! 😊\n\n"
+            "¿Qué trámite deseas consultar?\n\n"
             "1️⃣ Vacunación\n"
             "2️⃣ Control prenatal\n"
-            "3️⃣ Referencia\n\n"
-            "Puedes responder con el número o el nombre del trámite."
+            "3️⃣ Referencia médica\n\n"
+            "Puedes responder con el número o escribir el nombre del trámite."
         )
     }
+
 
 #Entender el tramite
 def resolver_tramite(user_input):
@@ -71,11 +73,12 @@ def manejar_tramite(user_id, user_message):
 
     return {
         "fulfillmentText": (
-            "No logré identificar el trámite :(\n"
-            "Responde con el número o el nombre:\n"
+            "Lo siento, no pude identificar el trámite.\n\n"
+            "Por favor indícame cuál deseas consultar:\n\n"
             "1️⃣ Vacunación\n"
             "2️⃣ Control prenatal\n"
-            "3️⃣ Referencia"
+            "3️⃣ Referencia médica\n\n"
+            "Puedes responder con el número o con el nombre del trámite."
         )
     }
 
@@ -152,10 +155,16 @@ def manejar_registro(user_id, user_message):
                 return {"fulfillmentText": MENSAJES_REGISTRO["exito"]}
             except Exception as e:
                 print("Error guardando solicitud:", e)
-                return {"fulfillmentText": "Tu solicitud no pudo guardarse en este momento 😅 Intenta más tarde."}
+                return {
+                    "fulfillmentText": (
+                        "Tuvimos un problema al registrar tu solicitud 😅\n"
+                        "Por favor, intenta nuevamente en unos minutos.\n\n"
+                        "Si el inconveniente persiste, puedes escribir *ayuda* para conocer otras opciones."
+                    )
+                }
 
         if respuesta_norm == "no":
             del user_states[user_id]
             return {"fulfillmentText": MENSAJES_REGISTRO["cancelado"]}
 
-        return {"fulfillmentText": "Por favor responde *sí* o *no*."}
+        return {"fulfillmentText": "Por favor responde *sí* para confirmar o *no* para cancelar."}
