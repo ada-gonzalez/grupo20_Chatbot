@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.4.0">
   <diagram name="Página-1" id="J1KahNbnMIsj42pied9g">
-    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1042" dy="527" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,7 +25,7 @@
         <mxCell id="1cvXiPagmCcx2wQn4h5K-21" edge="1" parent="1" source="1cvXiPagmCcx2wQn4h5K-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="1cvXiPagmCcx2wQn4h5K-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1cvXiPagmCcx2wQn4h5K-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#306EC0;strokeWidth=2;fillColor=#306EC0;fontColor=light-dark(#ffffff, #ededed);fontStyle=1" value="Dialogflow&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(Detección de intención básica)&lt;/font&gt;&lt;/span&gt;" vertex="1">
+        <mxCell id="1cvXiPagmCcx2wQn4h5K-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#306EC0;strokeWidth=2;fillColor=#306EC0;fontColor=light-dark(#ffffff, #ededed);fontStyle=1" value="Dialogflow&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(Detección de intención inicial)&lt;/font&gt;&lt;/span&gt;" vertex="1">
           <mxGeometry height="50" width="150" x="375" y="90" as="geometry" />
         </mxCell>
         <mxCell id="1cvXiPagmCcx2wQn4h5K-12" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1cvXiPagmCcx2wQn4h5K-9">
@@ -51,16 +51,19 @@
         <mxCell id="1cvXiPagmCcx2wQn4h5K-5" edge="1" parent="1cvXiPagmCcx2wQn4h5K-4" source="1cvXiPagmCcx2wQn4h5K-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1cvXiPagmCcx2wQn4h5K-7" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1cvXiPagmCcx2wQn4h5K-6" parent="1cvXiPagmCcx2wQn4h5K-4" style="text;html=1;whiteSpace=wrap;strokeColor=#306EC0;fillColor=#306EC0;align=center;verticalAlign=middle;rounded=0;strokeWidth=2;fontColor=#FFFFFF;fontStyle=1" value="&lt;blockquote data-start=&quot;2808&quot; data-end=&quot;2836&quot;&gt;&lt;p data-start=&quot;2810&quot; data-end=&quot;2836&quot;&gt;Flask&lt;/p&gt;&lt;/blockquote&gt;&lt;h4 data-start=&quot;2838&quot; data-end=&quot;2871&quot;&gt;&lt;/h4&gt;" vertex="1">
+        <mxCell id="1cvXiPagmCcx2wQn4h5K-6" parent="1cvXiPagmCcx2wQn4h5K-4" style="text;html=1;whiteSpace=wrap;strokeColor=#306EC0;fillColor=#306EC0;align=center;verticalAlign=middle;rounded=0;strokeWidth=2;fontColor=#FFFFFF;fontStyle=1" value="&lt;blockquote data-start=&quot;2808&quot; data-end=&quot;2836&quot;&gt;&lt;p data-start=&quot;2810&quot; data-end=&quot;2836&quot;&gt;Flask (Render)&lt;/p&gt;&lt;/blockquote&gt;&lt;h4 data-start=&quot;2838&quot; data-end=&quot;2871&quot;&gt;&lt;/h4&gt;" vertex="1">
           <mxGeometry height="30" width="180" x="22" y="60" as="geometry" />
         </mxCell>
         <mxCell id="1cvXiPagmCcx2wQn4h5K-7" parent="1cvXiPagmCcx2wQn4h5K-4" style="text;html=1;whiteSpace=wrap;strokeColor=#306EC0;fillColor=#306EC0;align=center;verticalAlign=middle;rounded=0;fontColor=#FFFFFF;fontStyle=1;strokeWidth=2;" value="&lt;div style=&quot;&quot;&gt;&lt;blockquote data-start=&quot;2912&quot; data-end=&quot;2940&quot;&gt;&lt;p data-start=&quot;2914&quot; data-end=&quot;2940&quot;&gt;Lógica de flujos (flows.py)&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="40" width="182.5" x="20.75" y="110" as="geometry" />
         </mxCell>
+        <mxCell id="GwbTYyJwXRP5e1CJTXTc-1" parent="1cvXiPagmCcx2wQn4h5K-4" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.cloud;" value="" vertex="1">
+          <mxGeometry height="30" width="52" x="151.25" y="20" as="geometry" />
+        </mxCell>
         <mxCell id="1cvXiPagmCcx2wQn4h5K-9" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=light-dark(#306EC0,#EDEDED);fillColor=#FFFFFF;" value="&lt;b&gt;Google Sheets&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(Almacenamiento)&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="90" x="645" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="1cvXiPagmCcx2wQn4h5K-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=14;" value="Arquitectura de Implementación" vertex="1">
+        <mxCell id="1cvXiPagmCcx2wQn4h5K-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=14;" value="Pipeline funcional del Chatbot CSDC" vertex="1">
           <mxGeometry height="30" width="370" x="229" y="40" as="geometry" />
         </mxCell>
         <mxCell id="1cvXiPagmCcx2wQn4h5K-17" edge="1" parent="1" source="1cvXiPagmCcx2wQn4h5K-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="1cvXiPagmCcx2wQn4h5K-3">
