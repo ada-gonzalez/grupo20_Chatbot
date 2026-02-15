@@ -7,18 +7,20 @@ REQUISITOS = {
             "Para realizar el trámite de vacunación, necesitas:\n"
             "• DUI\n"
             "• Carnet de vacunación (si lo posees)\n\n"
-            "Si no tienes el carnet, el personal te indicará cómo continuar."
+            "Si no tienes el carnet, el personal te indicará cómo continuar.\n\n"
+            "¿Deseas consultar otro trámite o necesitas ayuda con algo más?"
         )
     },
     "2": {
         "nombre": "control prenatal",
         "sinonimos": ["control prenatal", "prenatal", "control"],
         "respuesta": (
-            "😊 *Control prenatal*\n\n"
+            "🤰 *Control prenatal*\n\n"
             "Para el control prenatal, se solicita:\n"
             "• DUI\n"
             "• Prueba de embarazo positiva\n\n"
-            "Si tienes dudas sobre los documentos, puedes consultarlo en el centro de salud."
+            "Si tienes dudas sobre los documentos, puedes consultarlo en el centro de salud.\n\n"
+            "¿Te ayudo con otro trámite o con alguna otra consulta?"
         )
     },
     "3": {
@@ -29,7 +31,8 @@ REQUISITOS = {
             "Para gestionar una referencia médica, necesitas:\n"
             "• DUI\n"
             "• Referencia externa original\n\n"
-            "Recuerda llevar el documento en físico el día de tu visita."
+            "Recuerda llevar el documento en físico el día de tu visita.\n\n"
+            "Si necesitas información adicional o deseas consultar otro trámite, dime."
         )
     }
 }
