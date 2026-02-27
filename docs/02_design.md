@@ -2,7 +2,8 @@
 
 ## Flujos Conversacionales
 
-El chatbot opera bajo un modelo basado en intenciones, donde cada mensaje del usuario es analizado y dirigido a un flujo específico.
+El chatbot opera bajo un modelo basado en intenciones.  
+Cada mensaje del usuario es procesado por Dialogflow y dirigido al flujo correspondiente en el backend.
 
 ### Flujo General
 
@@ -19,7 +20,7 @@ Inicio → Bienvenida → Identificación de intención → Respuesta específic
 
 - **Requisitos de trámite**  
   Muestra un menú estructurado (vacunación, control prenatal, referencia).  
-  Incluye validación en backend para reducir ambigüedad en la selección.
+  Incluye validación en backend para mejorar precisión y reducir ambigüedad.
 
 - **Registrar solicitud**  
   Flujo multi-turn que captura:
@@ -27,40 +28,44 @@ Inicio → Bienvenida → Identificación de intención → Respuesta específic
   - Descripción
   - Medio de contacto (opcional)
   - Confirmación final  
+
   La información se almacena para seguimiento posterior.
 
 - **Ayuda**  
   Orienta al usuario sobre las opciones disponibles.
 
 - **Fallback**  
-  Maneja mensajes no reconocidos y redirige a opciones válidas para evitar ruptura de la conversación.
+  Maneja mensajes no reconocidos y redirige a opciones válidas para mantener continuidad conversacional.
 
 ---
 
-## Arquitectura de Implementación
+## Arquitectura de Implementación (Cloud)
 
-La solución se compone de los siguientes elementos:
+La solución opera en un entorno desplegado en la nube.
 
-- **Telegram**: canal de comunicación con el ciudadano.
-- **Dialogflow**: identificación de intención y enrutamiento.
-- **Webhook (Flask - Python)**: lógica conversacional y manejo de flujos multi-turn.
-- **Google Sheets**: almacenamiento estructurado de solicitudes.
-- **Ngrok (fase de desarrollo)**: exposición temporal del webhook local.
+### Componentes
 
-### Principios de Diseño
+- **Telegram**: canal de mensajería e interacción con el ciudadano.
+- **Dialogflow**: identificación de intenciones y enrutamiento hacia el webhook.
+- **Webhook desplegado en Render**: backend en entorno Cloud que procesa la lógica conversacional.
+- **Gunicorn**: servidor WSGI utilizado para ejecutar la aplicación en producción.
+- **Google Sheets**: almacenamiento estructurado de solicitudes registradas.
+
+### Flujo de Integración
+
+1. Usuario envía mensaje por Telegram.  
+2. Dialogflow identifica la intención.  
+3. Dialogflow invoca el webhook desplegado en Render.  
+4. El backend procesa la lógica del flujo.  
+5. Si aplica, se registra la solicitud en Google Sheets.  
+6. Se devuelve la respuesta al usuario a través de Telegram.
+
+---
+
+## Principios de Diseño
 
 - Modularidad
 - Escalabilidad
 - Mantenibilidad
-- Disponibilidad
+- Despliegue en entorno Cloud
 - Orientación al ciudadano
-
----
-
-## Integraciones Clave
-
-1. Canal de comunicación ↔ Plataforma conversacional  
-2. Motor de intenciones ↔ Backend  
-3. Backend ↔ Sistema de registro (Google Sheets)
-
-Estas integraciones permiten mantener continuidad del servicio, trazabilidad de solicitudes y reducción de carga operativa humana.
