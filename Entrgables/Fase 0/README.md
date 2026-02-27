@@ -1,4 +1,5 @@
 FASE 0 – Onboarding y Planificación inicial
+
 📖 Descripción de la Fase
 
 Fase inicial enfocada en la organización operativa y técnica del proyecto. Se establecen roles, herramientas, repositorio y recursos tecnológicos necesarios para el desarrollo del chatbot.
